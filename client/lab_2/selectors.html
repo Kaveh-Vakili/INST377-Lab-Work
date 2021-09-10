@@ -1,4 +1,3 @@
-
 <html>
  <head>
  <title>Kaveh Vakili Lab 1</title>
@@ -9,6 +8,9 @@
 
 
 <body>
+<div class="wrapper">
+
+
 
 <h1 class="title">Kaveh Vakili Lab 2: CSS Selectors</h1>
 
@@ -34,16 +36,19 @@
    <li>HTML and CSS</li>
    <li>Javascript</li>
    <li>Node.js</li>
+   <li>And other web development frameworks</li>
  </ul>
  
- 
- <p>These are my top 5 favorite albums.</p>
- <ol>
-   <li>The White Album by The Beatles</li>
-   <li>Rumors by Fleetwood Mac</li>
-   <li>Relapse by Eminem</li>
-   <li>2001 by Dr. Dre</li>
-   <li>My Beautiful Dark Twisted Fantasy by Kanye West</li>
+ <div>
+
+    <span>You should list your top 3 goals of this class below.</span>
+    <ol>
+      <li>Learn front-end web design</li>
+      <li>Learn new programming languages</li>
+      <li>Learn to work with others in a technical space</li>
+      <li>Learn popular web dev frameworks</li>
+ </div>
+
  </ol>
 </div>
 
@@ -62,21 +67,51 @@ Soft line breaks can't break anything.<br>
 Neither can image tags, or hard lines.<br>
 Add a hardline under here, and break the previous two lines using a soft line break.
 <hr/>
-<h2>Images</h2>
-<p>Include four images in the /images folder below </p>
-<p>Don't forget to use alt text on your images. It's important for accessibility.</p>
+
+<div class= "section_4">
+    <h2>Images</h2>
+    
+    <div class="carousel">
+        <div class="slides">
+        <img  src="./images/mochi.jpg" alt="mochi1">
+        <img  src=./images/mochi.png" alt="mochi2"> 
+        <img  class="carousel" src="./images/mochi.svg" alt="mochi3" >
+        <img  class="carousel" src="./images/mochi.gif" alt="mochi4">
+    </div>
+    </div>
+</div>
+    
 
 
 
+    
+ 
 
-    <p><a href="hhttps://github.com/Kaveh-Vakili/INST377-Lab-Work"> Include a hyperlink here to your github repository for class.</a></p>
+
+
+    <p><a href="https://github.com/Kaveh-Vakili/INST377-Lab-Work"> My github repository can be found here.</a></p>
+    <p>If you want your repo to be private, be sure to invite Prof A as a "collaorator"</p>
 
 
 
     <div class="title">
-        <h1>CSS Selectors                              </h1>
+        <h1>CSS Selectors</h1>
 
 
     </div>
+
+
+<nav>
+    <a href="selectors.html">Selectors</a>
+    <a href="index.html">Main Page</a>
+
+</nav>
+    <p class="default">
+        CSS selectors let you select individual elements in an HTML document. This is <strong>super </strong> useful. 
+        Classes are ridiculosuly importnant, since they allow you to select arbitary boxes in your web pages. 
+        Once you succefully develop a set of  selectors and CSS rules, it's relatively easy to match a document to those rules. 
+
+    </p>
+</div>
 </body>
 </html>

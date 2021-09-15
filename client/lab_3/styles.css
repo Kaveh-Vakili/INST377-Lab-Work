@@ -15,4 +15,9 @@
     border: 1px solid #fff;  /* For debugging */
     width: 900px;
   }
+   .header {
+    color: #fff;
+    background-color: #17A589 ;  /* Turqoise */
+    padding: 20px 0;
+  }
   

@@ -22,6 +22,10 @@
     color:#17202A;
     background-color: #17A589 ;  /* Turqoise */
     padding: 20px 0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 0;
+    margin-bottom: 5px;
   }
   .links {
     border: 1px solid #fff;  /* For debugging */

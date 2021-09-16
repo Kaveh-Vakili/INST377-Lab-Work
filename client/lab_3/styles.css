@@ -27,6 +27,7 @@
     border: 1px solid #fff;  /* For debugging */
     display: flex;
     justify-content: right;
+     text-align: right;
     
 
     
@@ -34,5 +35,5 @@
 
   .login {
     justify-content: left;
-    padding-left:3px;
+    text-align: left;
   }

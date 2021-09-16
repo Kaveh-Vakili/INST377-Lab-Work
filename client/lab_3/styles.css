@@ -27,10 +27,10 @@
     border: 1px solid #fff;  /* For debugging */
     display: flex;
     justify-content: right;
-    margin-right: auto;
+
     
   }
 
   .login {
-    margin-left: auto;
+    justify-content: left;
   }

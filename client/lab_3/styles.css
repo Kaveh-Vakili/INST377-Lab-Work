@@ -27,7 +27,8 @@
     border: 1px solid #fff;  /* For debugging */
     display: flex;
     justify-content: right;
-     text-align: right;
+    position: absolute;
+    right: 10px;
     
 
     
@@ -35,5 +36,7 @@
 
   .login {
     justify-content: left;
-    text-align: left;
+    position: absolute;
+    left: 10px;
+
   }

@@ -23,4 +23,8 @@
     background-color: #17A589 ;  /* Turqoise */
     padding: 20px 0;
   }
-  
+  .links {
+    border: 1px solid #fff;  /* For debugging */
+    display: flex;
+    justify-content: right;
+  }

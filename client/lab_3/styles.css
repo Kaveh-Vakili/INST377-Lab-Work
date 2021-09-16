@@ -16,7 +16,7 @@
     width: 900px;
     display: flex;
     justify-content: space-around;
-    
+    margin: auto;
   }
    .header {
     color:#17202A;

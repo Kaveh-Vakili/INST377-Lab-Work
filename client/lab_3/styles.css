@@ -86,6 +86,6 @@
   .footer-one,
   .footer-three {
     background-color: #5995DA;
-    flex: initial;
+    flex: 2;
     width: 300px;
   }  

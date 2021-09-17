@@ -51,7 +51,7 @@
     width: 900px;
     height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   .photo-grid-container {
@@ -89,8 +89,4 @@
   flex: initial;
   width: 300px;
 }
-.social,
-.logo,
-.subscribe {
-  border: 1px solid #5995DA;
-}
+

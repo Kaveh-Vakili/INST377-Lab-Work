@@ -83,9 +83,3 @@
     height: 200px;
     flex: 1;
   }
-  .footer-one,
-  .footer-three {
-    background-color: #5995DA;
-    flex: 2;
-    width: 300px;
-  }  

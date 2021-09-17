@@ -34,8 +34,13 @@
     justify-content: right;
     right: 30px;
     
+  }
+  .extralinks{
 
-    
+    color: #fff;
+    justify-content: space-between;
+
+
   }
 
   .login {

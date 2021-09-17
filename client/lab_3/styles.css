@@ -28,11 +28,12 @@
   
   }
   .links {
+    color: #fff;
     border: 1px solid #fff;  /* For debugging */
     display: flex;
     justify-content: right;
     right: 30px;
-    color: #fff;
+    
 
     
   }

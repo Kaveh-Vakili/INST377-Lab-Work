@@ -40,6 +40,7 @@
   .login {
     justify-content: left;
     left: 30px;
+    margin-left: 20px;
 
   }
 
@@ -99,3 +100,9 @@
   margin-bottom: 20px;
   color: #5995DA;
 }
+
+.signup {
+    margin-left: auto;
+    text-decoration: none;
+    color:white;
+    }

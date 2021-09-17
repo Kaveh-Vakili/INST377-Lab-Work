@@ -90,3 +90,9 @@
   width: 300px;
 }
 
+.options{
+
+    justify-content: right;
+    justify-content: space-between;
+
+}

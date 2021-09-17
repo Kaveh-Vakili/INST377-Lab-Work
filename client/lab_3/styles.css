@@ -89,3 +89,8 @@
   flex: initial;
   width: 300px;
 }
+.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+}

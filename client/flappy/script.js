@@ -29,5 +29,15 @@ bird.style.bottom=birdBottom+'px'
 console.log(birdBottom)
 
 }
-document.addEventListener('keyup',jump)
+document.addEventListener('keyup',control)
+
+function generateObstacle(){
+let obstacleleft=500
+let obstacleBottom=150
+const obstacle= document.createElement('div')
+obstacle.classList.add('obstacle')
+gameDisplay.appendChild(obstacle)
+obstacle.style.left=obstacleleft+'px'
+}
+generateObstacle()
 })

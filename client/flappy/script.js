@@ -33,11 +33,19 @@ document.addEventListener('keyup',control)
 
 function generateObstacle(){
 let obstacleleft=500
-let obstacleBottom=150
+let obstacleBottom=randomHeight
+let randomHeight=Math.random()*60
 const obstacle= document.createElement('div')
 obstacle.classList.add('obstacle')
 gameDisplay.appendChild(obstacle)
 obstacle.style.left=obstacleleft+'px'
+obstacle.style.bottom=obstacleBottom+'px'
+function moveObstacle(){
+
+    obstacleleft-=2
+    obstacle.style.left=obstacleleft+'px'
+}
+let timerId=setInterval(moveObstacle,20)
 }
 generateObstacle()
 })

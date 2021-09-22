@@ -14,5 +14,20 @@ function startGame(){
     bird.style.left=birdLeft+'px'
 
 }
-startGame()
+let timerId=setInterval(startGame,20)
+
+function control(e){
+    if(e.keyCode===32){
+        jump()
+    }
+
+
+}
+function jump(){
+   if (birdBottom<500) birdBottom+=50
+bird.style.bottom=birdBottom+'px'
+console.log(birdBottom)
+
+}
+document.addEventListener('keyup',jump)
 })

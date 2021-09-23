@@ -1,7 +1,44 @@
+body{
+
+    display: flex;
+}
+
 .game-container{
     width: 500px;
     height: 730px;
     position: absolute;
+    left: 80px;
+
+}
+.border-left{
+
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+}
+.border-right{
+
+    width: 80px;
+    height: 790px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+
+
+
+}
+.border-top{
+
+    width: 660px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    z-index: +2;
+    top:-50px;
+
+
 
 }
 
@@ -22,6 +59,7 @@ position: absolute;
     height: 150px;
     position: absolute;
     top: 500px;
+    z-index: +1;
 
 }
 .bird{
@@ -30,14 +68,51 @@ background-color: yellow;
 position: absolute;
 width: 60px;
 height: 45px;
+left: 220px;
+bottom: 100px;
 
 }
 
 .obstacle{
-    background-color: green;
+   
     width: 60px;
     height: 300px;
     position: absolute;
+
+
+}
+.topObstacle{
+    background-image: url('flappybird-pipe.png');
+transform:rotate(180deg);
+width:60px;
+height:3000px;
+position:absolute;
+
+}
+
+.ground-container{
+
+height: 150px;
+width: 580px;
+left:80px;
+position: absolute;
+
+
+}
+
+.ground-moving{
+
+
+position: absolute;
+top: 580px;
+height:150px;
+background-image:url('bottom-background.png') ;
+background-repeat: repeat-x;
+animation: slideright 100s infinite linear;
+-webkit-animation: slideright 100s infinite linear;
+width:100%;
+z-index: +1;
+
 
 
 }

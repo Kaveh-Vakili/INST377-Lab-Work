@@ -55,14 +55,20 @@ function moveObstacle(){
 
     obstacleleft-=2
     obstacle.style.left=obstacleleft+'px'
+   topObstacle.style.left=obstacleleft+'px'
     if(obstacleleft===-60){
 
         clearInterval(timerId)
         gameDisplay.removeChild(obstacle)
+        gameDisplay.removeChild(topObstacle)
     }
 
-    if(obstacleleft>200 && obstacleleft<200 &&birdLeft===220 || birdBottom===0){
+    if(obstacleleft>200 && obstacleleft<280 && birdLeft===220 && (birdBottom<obstacleBottom+153 || birdBottom>obstacleBottom+gap-200)||
+        birdBottom===0){
+
+        
         gameOver()
+        clearInterval(timerId)
     }
 }
 let timerId=setInterval(moveObstacle,20)
@@ -70,12 +76,14 @@ if(!isGameOver) setTimeout(generateObstacle,3000)
 }
 generateObstacle()
 
-function gameOver{
+function gameOver(){
 
     clearInterval(GameTimerId)
+    console.log('game over')
     isGameOver=true
     document.removeEventListener('keyup',control)
-    console.log('gameover')
+    ground.classList.add('ground')
+    ground.classList.remove('ground-moving')
 
 }
 })

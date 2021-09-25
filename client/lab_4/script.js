@@ -14,16 +14,41 @@ getElementById('carousel_button--prev')
     moveToPrevSlide();
 });
 
+function updateSlidePosition(){
+
+for(let slide of slides){
+  slide.classList.remove('carousel_item--visible');
+  slide.classList.add('carousel_item--hidden');
+
+
+}
+slides[slidePosition].classList.add('carousel_item--visible');
+
+}
+
+
 function moveToNextSlide(){
 
 if(slidePosition===totalSlides-1){
 
     slidePosition=0;
 }
-
+else{
+    slidePosition++;
+}
+updateSlidePosition();
 }
 
 function moveToPrevSlide(){
+updateSlidePosition();
+    if(slidePosition===0){
 
-    console.log('hello prev')
+        slidePosition=totalSlides-1;
+    }
+    else{
+    
+        slidePosition++;
+    }
+
+updateSlidePosition();
 }

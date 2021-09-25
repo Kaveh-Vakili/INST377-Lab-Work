@@ -47,7 +47,7 @@ updateSlidePosition();
     }
     else{
     
-        slidePosition++;
+        slidePosition--;
     }
 
 updateSlidePosition();

@@ -146,10 +146,10 @@ height: auto;
 display: flex;
 width: 100%;
 justify-content: space-between;
-position: fixed;
+position: absolute;
 top:50%;
 transform: translateY(-50%);
-text-align: center
+
 
 }
 
@@ -164,14 +164,14 @@ height: 40px;
 
 }
 
-.carousel .carousel_actions button#carousel_button_prev{
+.carousel .carousel_actions button#carousel_button--prev{
 
 
 margin-left: 20px;
 
 }
 
-.carousel .carousel_actions button#carousel_button_next{
+.carousel .carousel_actions button#carousel_button--next{
 
 margin-right: 20px;
 

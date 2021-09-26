@@ -40,7 +40,7 @@ updateSlidePosition();
 }
 
 function moveToPrevSlide(){
-updateSlidePosition();
+
     if(slidePosition===0){
 
         slidePosition=totalSlides-1;

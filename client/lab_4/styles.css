@@ -149,6 +149,7 @@ justify-content: space-between;
 position: fixed;
 top:50%;
 transform: translateY(-50%);
+text-align: center
 
 }
 

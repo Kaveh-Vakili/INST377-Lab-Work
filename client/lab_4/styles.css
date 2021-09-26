@@ -114,7 +114,10 @@
     overflow: hidden;
     max-width: 600px;
     position: relative;
-
+    align-items: center;
+    margin: 2rem auto;
+    width: 300px;
+    display: flex;
 }
 
 .carousel .carousel_item,
@@ -126,7 +129,7 @@
 .carousel .carousel_item img{
 width: 100%;
 max-width: 600px;
-height: 100%;
+height: auto;
 
 }
 

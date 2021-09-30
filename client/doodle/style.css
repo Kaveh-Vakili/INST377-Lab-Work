@@ -2,11 +2,13 @@
 width: 400px;
 height: 600px;
 background-color: yellow;
+font-size: 100px;
+text-align: center;
 position:relative;
 }
 .doodler{
 
-    width: 60px;
+    width: 87px;
     height: 85px;
     background-color: red;
     position: absolute;

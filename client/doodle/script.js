@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let score = 0
     let doodlerLeftSpace = 50
     let startPoint = 150
-    let doodlerBottomSpace = startPoint
+    let doodlerBottomSpace = 150
     const gravity = 0.9
     let upTimerId
     let downTimerId
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
       clearInterval(rightTimerId)
     }
   
-    //assign functions to keyCodes
+  
     function control(e) {
       doodler.style.bottom = doodlerBottomSpace + 'px'
       if(e.key === 'ArrowLeft') {

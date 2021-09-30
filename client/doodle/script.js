@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         doodler.style.bottom = doodlerBottomSpace + 'px'
         console.log('2',doodlerBottomSpace)
         console.log('s',startPoint)
-        if (doodlerBottomSpace > (startPoint+200) {
+        if (doodlerBottomSpace > (startPoint+200)) {
           fall()
           isJumping = false
         }

@@ -17,12 +17,12 @@ getElementById('carousel_button--prev')
 function updateSlidePosition(){
 
 for(let slide of slides){
-  slide.classList.remove('carousel_item--visible');
-  slide.classList.add('carousel_item--hidden');
+  slide.classList.remove('photo-grid-item--visible');
+  slide.classList.add('photo-grid-item--hidden');
 
 
 }
-slides[slidePosition].classList.add('carousel_item--visible');
+slides[slidePosition].classList.add('photo-grid-item--visible');
 
 }
 
@@ -36,7 +36,7 @@ if(slidePosition===totalSlides-1){
 else{
     slidePosition++;
 }
-updateSlidePosition();
+
 }
 
 function moveToPrevSlide(){
@@ -50,5 +50,4 @@ function moveToPrevSlide(){
         slidePosition--;
     }
 
-updateSlidePosition();
 }

@@ -78,6 +78,15 @@
     height: 300px;
   }
 
+  .photo-grid .photo-grid-item--visible{
+    display: block;
+  }
+
+  .photo-grid .photo-grid-item,.photo-grid .photo-grid-item--hidden{
+
+    display: none;
+  }
+
   .footer {
     display: flex;
     justify-content: space-between;

@@ -147,7 +147,7 @@ height: auto;
 
 }
 
-.photo-grid  .photo-grid-item--visible{
+.photo-grid .photo-grid-item--visible{
 
 
     display: block;
@@ -198,5 +198,8 @@ margin-right: 20px;
 
   order: -1;
 }
-
-
+@media only screen and (max-width: 400px) {
+  .photo-grid-item {
+    width: 50%;
+  }
+}

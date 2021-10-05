@@ -117,35 +117,41 @@
     text-decoration: none;
     color:white;
     }
-.carousel{
+.photo-grid{
 
-    overflow: hidden;
-    max-width: 600px;
-    position: relative;
-    align-items: center;
-    margin: 2rem auto;
-    width: 300px;
-    display: flex;
+  overflow: hidden;
+  max-width: 600px;
+  position: relative;
 }
 
-.carousel .carousel_item,
-.carousel .carousel_item--hidden{
+.photo-grid-item{
+
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+
+
+}
+
+
+.photo-grid .photo-grid-item,
+.photo-grid .photo-grid-item--hidden{
 
     display: none;
 }
 
-.carousel .carousel_item img{
+.photo-grid .photo-grid-item img{
 max-width: 600px;
 width:100% ;
 height: auto;
 
 }
 
-.photo-grid  .carousel_item--visible{
+.photo-grid  .photo-grid-item--visible{
 
 
     display: block;
-    animation: fadeVisibility 0.5s;
+
 
 }
 
@@ -164,11 +170,10 @@ transform: translateY(-50%);
 .photo-grid  .carousel_actions button{
 
 border-radius: 50px;
-border: 0;
+border: 0px;
 font-weight: bold;
 cursor: pointer;
-width: 40px;
-height: 40px;
+height: 25px;
 
 }
 

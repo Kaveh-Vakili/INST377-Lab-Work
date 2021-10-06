@@ -45,13 +45,29 @@ const lTetromino = [
 
   const theTetrominoes = [lTetromino, zTetromino, tTetromino, oTetromino, iTetromino]
         let currentPosition=4
-        let currentRotation=theTetrominoes[0][0]
+        let currentRotation=0
+
+        console.log(theTetrominoes[0][0])
+
+    let random = Math.floor(Math.random()*theTetrominoes.length)
+  let current = theTetrominoes[random][currentRotation]
 
         function draw(){
             current.forEach(index=>{
 
                 squares[currentPosition+index].classList.add('tetromino')
+                squares[currentPosition + index].style.backgroundColor = colors[random]
 
             })
         }
-draw()
+        function undraw(){
+
+            current.forEach(index => {
+                squares[currentPosition + index].classList.remove('tetromino')
+                squares[currentPosition + index].style.backgroundColor = ''
+          
+              })
+            }
+
+
+        

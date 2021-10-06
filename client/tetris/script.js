@@ -6,6 +6,16 @@ let squares=Array.from(document.querySelectorAll('.grid div'))
 const scoreDisplay = document.querySelector('#score')
 const startBtn = document.querySelector('#start-button')
 const width=10
+let nextRandom = 0
+let timerId
+let score = 0
+const colors = [
+  'orange',
+  'red',
+  'purple',
+  'green',
+  'blue'
+]
 
 })
 
@@ -69,5 +79,17 @@ const lTetromino = [
               })
             }
 
-
+            function control(e) {
+                if(e.keyCode === 37) {
+                  moveLeft()
+                } else if (e.keyCode === 38) {
+                  rotate()
+                } else if (e.keyCode === 39) {
+                  moveRight()
+                } else if (e.keyCode === 40) {
+                  moveDown()
+                }
+              }
+              document.addEventListener('keyup', control)
+            
         

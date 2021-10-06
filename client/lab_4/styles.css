@@ -133,11 +133,7 @@
 
 }
 
-.photo-grid-container{
-  display: flex;
-  justify-content: center;
 
-}
 .photo-grid .photo-grid-item,
 .photo-grid .photo-grid-item--hidden{
 

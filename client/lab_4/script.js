@@ -28,7 +28,7 @@ slides[slidePosition].classList.add('photo-grid-item--visible');
 
 
 function moveToNextSlide(){
-
+    updateSlidePosition();
 if(slidePosition===totalSlides-1){
 
     slidePosition=0;
@@ -40,7 +40,7 @@ else{
 }
 
 function moveToPrevSlide(){
-
+    updateSlidePosition();
     if(slidePosition===0){
 
         slidePosition=totalSlides-1;

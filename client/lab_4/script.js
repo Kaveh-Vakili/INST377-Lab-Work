@@ -1,5 +1,5 @@
 let slidePosition=0;
-const slides=document.getElementsByClassName('carousel_item');
+const slides=document.querySelectorAll('.photo-grid-item');
 const totalSlides=slides.length;
 
 document.

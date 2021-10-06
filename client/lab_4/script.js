@@ -3,13 +3,13 @@ const slides=document.querySelectorAll('.photo-grid-item');
 const totalSlides=slides.length;
 
 document.
-getElementById('carousel_button--next')
+querySelector('#carousel_button--next')
 .addEventListener("click",function(){
     moveToNextSlide();
 });
 
 document.
-getElementById('carousel_button--prev')
+querySelector('#carousel_button--prev')
 .addEventListener("click",function(){
     moveToPrevSlide();
 });

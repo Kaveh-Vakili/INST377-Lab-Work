@@ -60,28 +60,28 @@
     justify-content: space-between;
     align-items: center;
   }
-  .photo-grid-container {
+  .carousel-container {
     display: flex;
     justify-content: center;
   }
   
-  .photo-grid {
+  .carousel {
     overflow: hidden;
     max-width: 600px;
     position: relative;
   }
   
-  .photo-grid-item {
+  .carousel-item {
     border: 1px solid #fff;
     width: 300px;
     height: 300px;
   }
 
-  .photo-grid .photo-grid-item--visible{
+  .carousel .carousel-item--visible{
     display: block;
   }
 
-  .photo-grid .photo-grid-item,.photo-grid .photo-grid-item--hidden{
+  .carousel .carousel-item,.carousel .carousel-item--hidden{
 
     display: none;
   }
@@ -117,14 +117,14 @@
     text-decoration: none;
     color:white;
     }
-.photo-grid{
+.carousel{
 
   overflow: hidden;
   max-width: 600px;
   position: relative;
 }
 
-.photo-grid-item{
+.carousel-item{
 
   border: 1px solid #fff;
   width: 300px;
@@ -134,20 +134,20 @@
 }
 
 
-.photo-grid .photo-grid-item,
-.photo-grid .photo-grid-item--hidden{
+.carousel .carousel-item,
+.carousel .carousel-item--hidden{
 
     display: none;
 }
 
-.photo-grid .photo-grid-item img{
+.carousel .carousel-item img{
 max-width: 600px;
 width:100% ;
 height: auto;
 
 }
 
-.photo-grid .photo-grid-item--visible{
+.carousel .carousel-item--visible{
 
 
     display: block;
@@ -155,7 +155,7 @@ height: auto;
 
 }
 
-.photo-grid  .carousel_actions{
+.carousel  .carousel_actions{
 
 display: flex;
 width: 100%;
@@ -167,7 +167,7 @@ transform: translateY(-50%);
 
 }
 
-.photo-grid  .carousel_actions button{
+.carousel  .carousel_actions button{
 
 border-radius: 50px;
 border: 0px;
@@ -177,14 +177,14 @@ height: 25px;
 
 }
 
-.photo-grid .carousel_actions button#carousel_button--prev{
+.carousel .carousel_actions button#carousel_button--prev{
 
 
 margin-left: 20px;
 
 }
 
-.photo-grid .carousel_actions button#carousel_button--next{
+.carousel .carousel_actions button#carousel_button--next{
 
 margin-right: 20px;
 
@@ -199,7 +199,7 @@ margin-right: 20px;
   order: -1;
 }
 @media only screen and (max-width: 400px) {
-  .photo-grid-item {
+  .carousel-item {
     width: 50%;
   }
 }

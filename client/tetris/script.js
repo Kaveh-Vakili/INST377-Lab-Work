@@ -146,3 +146,85 @@ const lTetromino = [
   function isAtLeft() {
     return current.some(index=> (currentPosition + index) % width === 0)
   }
+
+  function checkRotatedPosition(P){
+
+    P = P || currentPosition 
+    if ((P+1) % width < 4) { 
+        currentPosition += 1  
+        checkRotatedPosition(P) 
+    }
+    else if (P % width > 5) {
+
+        if (isAtLeft()){
+            currentPosition -= 1
+          checkRotatedPosition(P)
+          }
+
+
+    }
+  }
+
+  function rotate(){
+
+
+    undraw()
+    currentRotation++
+    if(currentRotation===current.length){
+        currentPosition=0
+
+
+    }
+
+    current = theTetrominoes[random][currentRotation]
+    
+    draw()
+
+
+  }
+
+  const displaySquares = document.querySelectorAll('.mini-grid div')
+  const displayWidth = 4
+  const displayIndex = 0
+
+
+  const upNextTetrominoes=[
+
+    [1,displayWidth+1,displayWidth*2+1,2],
+    [0,displayWidth,displayWidth+1,displayWidth*2+1]
+    [1,displayWidth,displayWidth+1,displayWidth+2]
+    [0,1,displayWidth,displayWidth+1]
+    [1,displayWidth+1,displayWidth*2_1, displayWidth*3+1]
+
+
+  ]
+function displayShape(){
+displaySquares.forEach(square=>{
+square.classList.remove('tetromino')
+
+
+
+})
+upNextTetrominoes[nextRandom].forEach( index=>{
+
+displaySquares[displayIndex+index].classList.add('tetromino')
+
+})
+
+}
+
+startBtn.addEventListener('click',()=>{
+
+    if(timerId){
+
+        clearInterval(timerId)
+        timerId=null
+    }else{
+        draw()
+        timerId=setInterval(moveDown,1000)
+        nextRandom=Math.floor(Math.random()*theTetrominoes.length)
+        displayShape()
+    }
+    }
+)
+

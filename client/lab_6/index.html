@@ -54,39 +54,14 @@ async function windowActions(){
         suggestions.innerHTML=html;
         const search=document.querySelector('.search');
         const suggestions=document.querySelector('suggestions');
+        search.addEventListener('change',(evt)=>{displayMatches(evt)});
+        search.addEventListener('keyup',(evt)=>{displayMatches(evt)});
 
             }
         
-       
-
-    }
-    
-
+       widow.onload=windowActions;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-
+</script>   
 </body>
-
-
-
 </html>

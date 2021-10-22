@@ -20,7 +20,7 @@ async function windowActions(){
     function findMatches(wordToMatch,resultData){
         return resultData.filter((place)=>{
 
-            const regex=new RegExp(wordMatch,'gi');
+            const regex=new RegExp(wordToMatch,'gi');
             return place.name.match(regex)|| place.zip.match(regex);
 
         });

@@ -53,7 +53,7 @@ async function windowActions(){
         suggestions.innerHTML=html;
     }
         const searchInput=document.querySelector('.search');
-        const suggestions=document.querySelector('suggestions');
+        const suggestions=document.querySelector('.suggestions');
         searchInput.addEventListener('change',(evt)=>{displayMatches(evt)});
         searchInput.addEventListener('keyup',(evt)=>{displayMatches(evt)});
 

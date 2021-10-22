@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"
-<title>Kaveh Vakili - Lab 6</title>
 <link rel='stylesheet' href='styles.css'/>
 </head>
 <body>
@@ -52,15 +51,16 @@ async function windowActions(){
         }).join('');
         
         suggestions.innerHTML=html;
+    }
         const search=document.querySelector('.search');
         const suggestions=document.querySelector('suggestions');
         search.addEventListener('change',(evt)=>{displayMatches(evt)});
         search.addEventListener('keyup',(evt)=>{displayMatches(evt)});
 
-            }
+         }
         
        widow.onload=windowActions;
-}
+
 
 </script>   
 </body>
